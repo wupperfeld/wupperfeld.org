@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Innovative Lösungen zu entwickeln ist unsere Leidenschaft."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wupperfeld Ventures</title>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- custom style -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <!-- cookie notice style -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1668772586592108");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none;"
+        src="https://www.facebook.com/tr?id=1668772586592108&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+
+  <body>
+    <video src="media/Nebula.mp4" autoplay muted loop class="video"></video>
+
+    <div class="content">
+      <img
+        class="wuv-logo"
+        src="images/WUV-Schriftzug-weiß-min.png"
+        alt="Wupperfeld Ventures Logo"
+      />
+
+      <h1 class="title">
+        Innovative Lösungen zu entwickeln <br />
+        ist unsere Leidenschaft
+      </h1>
+
+      <a
+        href="mailto:tobias@wupperfeld.org"
+        class="contact__btn btn btn-lg btn-dark"
+        type="button"
+        name="button"
+        >Kontakt</a
+      >
+
+      <div class="karte">
+        <img
+          src="images/tw-logo-white.png"
+          class="karte__logo"
+          alt="TW Software Engineering Logo"
+        />
+        <a href="https://tobiaswupperfeld.com/" class="karte__btn btn btn-light"
+          >Fullstack Web Entwicklung</a
+        >
+      </div>
+
+      <footer>
+        <div>
+          <a class="footer__links" href="impressum">Impressum</a>
+          <a class="footer__links" href="datenschutz">Datenschutz</a>
+        </div>
+
+        <div>
+          <a class="footer__links" href="https://fb.com/tobias.wupperfeld"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            class="footer__links"
+            href="https://www.linkedin.com/in/tobias-wupperfeld/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <p>© 2020</p>
+      </footer>
+    </div>
+
+    <!-- cookie notice -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+      data-cfasync="false"
+    ></script>
+    <script>
+      window.cookieconsent.initialise({
+        palette: {
+          popup: {
+            background: "#343a40",
+          },
+          button: {
+            background: "#ecba82",
+          },
+        },
+        theme: "classic",
+        position: "bottom-right",
+        type: "opt-in",
+        content: {
+          message:
+            "Diese Webseite nutzt Cookies, um das Nutzererlebnis zu verbessern.",
+          allow: "Cookies akzeptieren",
+          deny: "Ablehnen",
+          link: "Mehr dazu",
+          href: "datenschutz",
+        },
+        onInitialise: function (status) {
+          var type = this.options.type;
+          var didConsent = this.hasConsented();
+          if (type == "opt-in" && didConsent) {
+            // enable cookies
+          }
+          if (type == "opt-out" && !didConsent) {
+            // disable cookies
+          }
+        },
+        onStatusChange: function (status, chosenBefore) {
+          var type = this.options.type;
+          var didConsent = this.hasConsented();
+          if (type == "opt-in" && didConsent) {
+            // enable cookies
+          }
+          if (type == "opt-out" && !didConsent) {
+            // disable cookies
+          }
+        },
+        onRevokeChoice: function () {
+          var type = this.options.type;
+          if (type == "opt-in") {
+            // disable cookies
+          }
+          if (type == "opt-out") {
+            // enable cookies
+          }
+        },
+      });
+    </script>
+  </body>
+</html>

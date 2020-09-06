@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+}
+
+.video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 51, 59, 0.5);
+}
+
+.wuv-logo {
+  width: 200px;
+  margin: 20px 0 50px 0;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 35px;
+}
+
+.contact__btn {
+  background-color: rgba(34, 51, 59, 0.8);
+}
+
+.karte {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  background-color: rgba(34, 51, 59, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.karte__logo {
+  width: 200px;
+  align-self: center;
+}
+
+.karte__btn {
+  background-color: #ecba82;
+}
+
+footer {
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  color: white;
+}
+
+.footer__links {
+  color: white;
+  margin-right: 10px;
+}
+
+.footer__links:hover {
+  color: #ecba82;
+}
+
+@media (max-width: 571px) {
+  .title {
+    font-size: 25px;
+  }
+}

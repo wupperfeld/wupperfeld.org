@@ -1,0 +1,41 @@
+h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  margin-bottom: 2%;
+}
+
+footer {
+  background-color: #22333b;
+  padding: 1% 0 1%;
+}
+
+.footer {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.social-icons {
+  float: right;
+}
+
+.copyright {
+  color: white;
+}
+
+.footer-links {
+  color: white;
+}
+
+.footer-links:hover {
+  color: #ecba82;
+}
+
+.impressum {
+  margin-right: 1%;
+}
+
+.fb-icon {
+  margin-right: 10px;
+}
