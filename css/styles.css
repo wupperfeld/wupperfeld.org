@@ -7,62 +7,26 @@ body {
 }
 
 .content {
-  width: 100%;
-  height: 100%;
-  position: fixed;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .wuv-logo {
-  width: 200px;
-  margin: 20px 0 50px 0;
-}
-
-h1 {
-  font-family: "Open Sans", sans-serif;
-}
-
-.title {
-  margin-bottom: 30px;
-  color: black;
-  font-size: 35px;
-}
-
-.contact__btn {
-  background-color: rgba(34, 51, 59, 0.8);
-}
-
-.karte {
-  width: 300px;
-  height: 200px;
-  padding: 20px;
-  background-color: rgba(34, 51, 59, 0.8);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: auto;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-
-.karte__logo {
-  width: 200px;
-  align-self: center;
-}
-
-.karte__btn {
-  background-color: #ecba82;
+  width: 350px;
 }
 
 footer {
   padding: 10px 0 10px 0;
   display: flex;
   justify-content: center;
-  bottom: 0;
-  color: black;
+  color: rgba(0, 0, 0, 0.479);
 }
 
 .footer__links {
-  color: black;
+  color: rgba(0, 0, 0, 0.479);
   margin-right: 10px;
 }
 
@@ -71,9 +35,7 @@ footer {
 }
 
 @media (max-width: 571px) {
-  .title {
-    font-size: 25px;
-  }
+
   body {
     background-position: 67%;
   }
