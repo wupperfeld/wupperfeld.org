@@ -26,48 +26,6 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-    <!-- cookie notice style -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
-    />
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "1668772586592108");
-      fbq("track", "PageView");
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none;"
-        src="https://www.facebook.com/tr?id=1668772586592108&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
   </head>
 
   <body>
@@ -88,18 +46,14 @@
       <h2>Impressum</h2>
       <p>
         Tobias Wupperfeld<br />
-        Wupperfeld Ventures<br />Sonnenstr. 35<br />40227 Düsseldorf
+        Sonnenstr. 35<br />40227 Düsseldorf
       </p>
       <p>
         Telefon: +49 176 9582 8045<br />
         E-Mail: <a href="mailto:tobias@wupperfeld.org">tobias@wupperfeld.org</a
         ><br />
       </p>
-      <p>
-        <strong>Umsatzsteuer-ID: </strong
-        ><br />Umsatzsteuer-Identifikationsnummer nach §27a
-        Umsatzsteuergesetz:<br />DE313643744
-      </p>
+
       <br />
       <h2>Hinweis gem&auml;&szlig; Online-Streitbeilegungs-Verordnung</h2>
       <p>
@@ -197,62 +151,5 @@
       </div>
       <p class="copyright">© 2020</p>
     </footer>
-    <!-- cookie notice -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
-      data-cfasync="false"
-    ></script>
-    <script>
-      window.cookieconsent.initialise({
-        palette: {
-          popup: {
-            background: "#343a40",
-          },
-          button: {
-            background: "#ecba82",
-          },
-        },
-        theme: "classic",
-        position: "bottom-right",
-        type: "opt-in",
-        content: {
-          message:
-            "Diese Webseite nutzt Cookies, um das Nutzererlebnis zu verbessern.",
-          allow: "Cookies akzeptieren",
-          deny: "Ablehnen",
-          link: "Mehr dazu",
-          href: "datenschutz",
-        },
-        onInitialise: function (status) {
-          var type = this.options.type;
-          var didConsent = this.hasConsented();
-          if (type == "opt-in" && didConsent) {
-            // enable cookies
-          }
-          if (type == "opt-out" && !didConsent) {
-            // disable cookies
-          }
-        },
-        onStatusChange: function (status, chosenBefore) {
-          var type = this.options.type;
-          var didConsent = this.hasConsented();
-          if (type == "opt-in" && didConsent) {
-            // enable cookies
-          }
-          if (type == "opt-out" && !didConsent) {
-            // disable cookies
-          }
-        },
-        onRevokeChoice: function () {
-          var type = this.options.type;
-          if (type == "opt-in") {
-            // disable cookies
-          }
-          if (type == "opt-out") {
-            // enable cookies
-          }
-        },
-      });
-    </script>
   </body>
 </html>
